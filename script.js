@@ -24,14 +24,15 @@ const URL = "https://jsonplaceholder.typicode.com/users";
 
         //usando metodo POST
    //recibirás un cuerpo de respuesta conteniendo el objeto de publicación del post junto con una nueva ID.
-    /*async function getHttp() {
+    async function getHttp() {
      const response = await fetch(URL, optionsPost) //segundo parametros aclarando Metodo POST y requerimientos del metodo
      if (!response.ok) throw new Error('Error', response.status)
      const data = await response.json()
-          console.log('Todo exitoso', data)
-      };*/
+        console.log('Todo exitoso', data, response.status)
+        
+      }
        //Prueba con otra forma de realizar el fetch
-   function getHttp() {
+  /* function getHttp() {
     fetch(URL, optionsPost)
         .then(response => {
             if (!response.ok) {
@@ -44,7 +45,7 @@ const URL = "https://jsonplaceholder.typicode.com/users";
         .catch(error => {
             console.log('Error', error);
         })
-  };
+  };*/
    
       
 
