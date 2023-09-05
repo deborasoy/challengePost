@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Formulario de registro</h2>
+    <form action="">
+        <label for="name">Nombre</label>
+        <input class="text" type="text" id="name" name="name" required placeholder="nombre">
+        <label for="lastname">Apellido</label>
+        <input class="text" type="text"  id="lastname" name="lastname" required placeholder="apellido">
+        <label for="date">Fecha de nacimiento</label>
+        <input class="date" type="date" id="date" name="date" required>
+        <input class="submit" type="submit" id="submit">
+        
+    </form>
+
+    <div>
+        <h2 class="datos">Datos almacenados y enviados</h2>
+        <p id="nomP"></p>
+        <p id="lasnP"></p>
+        <p id="dateP"></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
